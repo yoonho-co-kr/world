@@ -469,4 +469,8 @@
              height: 15vw;
          }
      }
+
+     .img_px {
+         margin-top: 50px;
+     }
  }
