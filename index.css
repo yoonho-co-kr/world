@@ -446,5 +446,27 @@
          transform: translate(-50%, 50%);
          z-index: 999999;
          transition: background-color 0.5s;
+         animation: menu_move 2s linear infinite;
+     }
+
+     .name {
+         display: block;
+     }
+
+     @keyframes menu_move {
+         0% {
+             width: 15vw;
+             height: 15vw;
+         }
+
+         50% {
+             width: 18vw;
+             height: 18vw;
+         }
+
+         100% {
+             width: 15vw;
+             height: 15vw;
+         }
      }
  }
