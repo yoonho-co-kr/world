@@ -410,9 +410,9 @@ $(document).ready(function () {
         }
         else if (s_top < phillipines) {
             menu_change(0)
-            $(".name_hide").animate({
-                left: "0"
-            })
+            // $(".name_hide").animate({
+            //     left: "0"
+            // })
         }
 
     })
