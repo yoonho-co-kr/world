@@ -4,11 +4,15 @@ $(document).ready(function () {
     setInterval(dpTime, 1000);
     function dpTime() {
         var now = new Date();
-        hours = now.getHours();
-        minutes = now.getMinutes();
-        seconds = now.getSeconds();
-        let time_diffrence = [3]
+        let hours = now.getHours();
+        let minutes = now.getMinutes();
+        let seconds = now.getSeconds();
+
+        let time_diffrence = [3, 1, 2, 2, 1, 8, 8, 8, 8, 8, 8]
         for (let i = 0; i < time_diffrence.length; i++) {
+            hours = now.getHours();
+            minutes = now.getMinutes();
+            seconds = now.getSeconds();
             hours -= time_diffrence[i];
             if (hours > 12) {
                 hours -= 12;
@@ -44,12 +48,12 @@ $(document).ready(function () {
     let number = document.getElementsByClassName("number");
 
     let country_arr = ["phillipines", 'malaysia', 'indonesia', 'vietnam', 'taiwan', 'italy', 'spain', 'poland', 'montenegro', 'serbia', 'croatia']
-    let year_arr = [2003, 2004, 2005, 2006, 2007, 2008, 2009, 2010, 2010, 2010, 2010]
-    let area_arr = [343448, 343448, 343448, 343448, 343448, 343448, 343448, 343448, 343448, 343448, 343448]
-    let popu_arr = [113238345, 113238345, 113238345, 113238345, 113238345, 113238345, 113238345, 113238345, 113238345, 113238345, 113238345, 113238345,]
-    let code_arr = [63, 63, 63, 63, 63, 63, 63, 63, 63, 63, 63,]
+    let year_arr = [2003, 2017, 2018, 2019, 2007, 2019, 2019, 2020, 2022, 2022, 2022]
+    let area_arr = [343448, 329847, 1904569, 330341, 36197, 302068, 92090, 312679, 13812, 77474, 56594]
+    let popu_arr = [113238345, 33938221, 280865099, 98721275, 23893394, 59169131, 47431256, 37887768, 628262, 8651278, 4043666]
+    let code_arr = [63, 20, 62, 84, 886, 39, 34, 48, 382, 381, 385,]
 
-    let personal_rate = [[1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [1, 2, 3, 4, 5], [6, 7, 8, 9, 10], [7, 9, 5, 6, 6], [7, 9, 5, 6, 6], [7, 9, 5, 6, 6], [7, 9, 5, 6, 6], [7, 9, 5, 6, 6], [3, 4, 5, 6, 7], [7, 9, 5, 6, 6]]
+    let personal_rate = [[6, 8, 4, 5, 3], [6, 9, 5, 4, 10], [8, 7, 3, 3, 9], [10, 8, 6, 7, 8], [10, 6, 8, 7, 10], [9, 9, 8, 6, 7], [8, 8, 6, 7, 8], [7, 9, 8, 9, 10], [5, 9, 5, 3, 10], [5, 8, 7, 7, 8], [6, 10, 6, 7, 9]]
     for (let i = 0; i < country_arr.length; i++) {
         let insert_section = `<section class="section information ${country_arr[i]}">
             <div class="country_img_box">
