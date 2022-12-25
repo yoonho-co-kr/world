@@ -53,7 +53,9 @@ $(document).ready(function () {
     for (let i = 0; i < country_arr.length; i++) {
         let insert_section = `<section class="section information ${country_arr[i]}">
             <div class="country_img_box">
-                <div class="name">${country_arr[i].toUpperCase()}</div>
+                <div class="name">${country_arr[i].toUpperCase()}
+                <div class="name_hide"></div>
+                </div>
                 <div class="img_px"><img src="./img/${country_arr[i]}.svg" alt=""></div>
             </div>
             <div class="country_txt_box">
@@ -252,7 +254,9 @@ $(document).ready(function () {
                 increase_number(10, j)
             }
             menu_change(11)
-
+            $(".name_hide").eq(10).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= serbia && s_top < serbia + margin) {
             increase_year(9)
@@ -265,6 +269,9 @@ $(document).ready(function () {
                 increase_number(9, j)
             }
             menu_change(10)
+            $(".name_hide").eq(9).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= montenegro && s_top < montenegro + margin) {
             increase_year(8)
@@ -277,6 +284,9 @@ $(document).ready(function () {
                 increase_number(8, j)
             }
             menu_change(9)
+            $(".name_hide").eq(8).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= poland && s_top < poland + margin) {
             increase_year(7)
@@ -289,6 +299,9 @@ $(document).ready(function () {
                 increase_number(7, j)
             }
             menu_change(8)
+            $(".name_hide").eq(7).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= spain && s_top < spain + margin) {
             increase_year(6)
@@ -301,6 +314,9 @@ $(document).ready(function () {
                 increase_number(6, j)
             }
             menu_change(7)
+            $(".name_hide").eq(6).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= italy && s_top < italy + margin) {
             increase_year(5)
@@ -313,6 +329,9 @@ $(document).ready(function () {
                 increase_number(5, j)
             }
             menu_change(6)
+            $(".name_hide").eq(5).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= taiwan && s_top < taiwan + margin) {
             increase_year(4)
@@ -325,6 +344,9 @@ $(document).ready(function () {
                 increase_number(4, j)
             }
             menu_change(5)
+            $(".name_hide").eq(4).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= vietnam && s_top < vietnam + margin) {
             increase_year(3)
@@ -332,11 +354,14 @@ $(document).ready(function () {
             increase_popu(3)
             increase_code(3)
             increase_number(3)
-            for (let j = 0; j < personal_rate[3].length; j++) {
+            for (let j = 0; j < personal_rate[5].length; j++) {
                 active_progress(3, j)
                 increase_number(3, j)
             }
             menu_change(4)
+            $(".name_hide").eq(3).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= indonesia && s_top < indonesia + margin) {
             increase_year(2)
@@ -349,6 +374,9 @@ $(document).ready(function () {
                 increase_number(2, j)
             }
             menu_change(3)
+            $(".name_hide").eq(2).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= malaysia && s_top < malaysia + margin) {
             increase_year(1)
@@ -361,6 +389,9 @@ $(document).ready(function () {
                 increase_number(1, j)
             }
             menu_change(2)
+            $(".name_hide").eq(1).animate({
+                left: "100%"
+            })
         }
         else if (s_top >= phillipines && s_top < phillipines + margin) {
             increase_year(0)
@@ -373,10 +404,17 @@ $(document).ready(function () {
                 increase_number(0, j)
             }
             menu_change(1)
+            $(".name_hide").eq(0).animate({
+                left: "100%"
+            })
         }
         else if (s_top < phillipines) {
             menu_change(0)
+            $(".name_hide").animate({
+                left: "0"
+            })
         }
+
     })
 
     let menu_set_pos = "fixed";
