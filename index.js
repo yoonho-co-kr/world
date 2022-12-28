@@ -48,7 +48,7 @@ $(document).ready(function () {
     let number = document.getElementsByClassName("number");
 
     let country_arr = ["phillipines", 'malaysia', 'indonesia', 'vietnam', 'taiwan', 'italy', 'spain', 'poland', 'montenegro', 'serbia', 'croatia']
-    let year_arr = [2003, 2017, 2018, 2019, 2019, 2019, 2019, 2020, 2022, 2022, 2022]
+    let year_arr = [2003, 2017, 2018, 2019, 2019, 2019, 2019, 2020, 2021, 2022, 2022]
     let area_arr = [343448, 329847, 1904569, 330341, 36197, 302068, 92090, 312679, 13812, 77474, 56594]
     let popu_arr = [113238345, 33938221, 280865099, 98721275, 23893394, 59169131, 47431256, 37887768, 628262, 8651278, 4043666]
     let code_arr = [63, 20, 62, 84, 886, 39, 34, 48, 382, 381, 385,]
