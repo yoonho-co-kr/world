@@ -4,9 +4,6 @@ $(document).ready(function () {
     setInterval(dpTime, 1000);
     function dpTime() {
         var now = new Date();
-        let hours = now.getHours();
-        let minutes = now.getMinutes();
-        let seconds = now.getSeconds();
 
         let time_diffrence = [3, 1, 2, 2, 1, 8, 8, 8, 8, 8, 8]
         for (let i = 0; i < time_diffrence.length; i++) {
@@ -57,7 +54,7 @@ $(document).ready(function () {
     for (let i = 0; i < country_arr.length; i++) {
         let insert_section = `<section class="section information ${country_arr[i]}">
             <div class="country_img_box">
-                <div class="name">${country_arr[i].toUpperCase()}
+                                <div class="name">${country_arr[i].toUpperCase()}
                 <div class="name_hide"></div>
                 </div>
                 <div class="img_px"><img src="./img/${country_arr[i]}.svg" alt=""></div>
@@ -261,6 +258,7 @@ $(document).ready(function () {
             $(".name_hide").eq(10).animate({
                 left: "100%"
             })
+
         }
         else if (s_top >= serbia && s_top < serbia + margin) {
             increase_year(9)
@@ -358,7 +356,7 @@ $(document).ready(function () {
             increase_popu(3)
             increase_code(3)
             increase_number(3)
-            for (let j = 0; j < personal_rate[5].length; j++) {
+            for (let j = 0; j < personal_rate[3].length; j++) {
                 active_progress(3, j)
                 increase_number(3, j)
             }
@@ -414,11 +412,8 @@ $(document).ready(function () {
         }
         else if (s_top < phillipines) {
             menu_change(0)
-            // $(".name_hide").animate({
-            //     left: "0"
-            // })
-        }
 
+        }
     })
 
     let menu_set_pos = "fixed";
