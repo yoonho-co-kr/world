@@ -18,7 +18,7 @@
 	.st1{fill:#FE0000;}
 	.st2{fill:#FFFFFF;}
 
-	.st0{
+	<!-- .st0{
 		animation : blink1 5s infinite;
 	}
 		.st1{
@@ -45,7 +45,7 @@
 		10%{fill:#FFFFFF;}
 		90%{fill:#FFFFFF;}
 		100%{fill:#4e4e50;}
-	}
+	} -->
 </style>
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
