@@ -14,8 +14,26 @@
 	 xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink" x="0px" y="0px" viewBox="0 0 800 750"
 	 style="enable-background:new 0 0 800 750;" xml:space="preserve">
 <style type="text/css">
-	.st0{opacity:0.9;fill:#FFFDFE;}
-	.st1{opacity:0.9;fill:#FC0203;}
+	.st0{fill:#FFFDFE;}
+	.st1{fill:#FC0203;}
+.st0{
+		animation : blink1 5s infinite;
+	}
+		.st1{
+		animation : blink2 5s infinite;
+	}
+@keyframes blink1 {
+		0%{fill:#4e4e50;}
+		10%{fill:#FFFDFE;}
+		90%{fill:#FFFDFE;}
+		100%{fill:#4e4e50;}
+	}
+	@keyframes blink2 {
+		0%{fill:#4e4e50;}
+		10%{fill:#FC0203;}
+		90%{fill:#FC0203;}
+		100%{fill:#4e4e50;}
+	}
 </style>
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">

@@ -22,6 +22,80 @@
 	.st5{fill:#C60C13;}
 	.st6{fill:#006696;}
 	.st7{fill:#D4A722;}
+
+	.st0{
+		animation : blink1 5s infinite;
+	}
+		.st1{
+		animation : blink2 5s infinite;
+	}
+		.st2{
+		animation : blink3 5s infinite;
+	}
+		.st3{
+		animation : blink4 5s infinite;
+	}
+	.st4{
+		animation : blink5 5s infinite;
+	}
+	.st5{
+		animation : blink6 5s infinite;
+	}
+	.st6{
+		animation : blink7 5s infinite;
+	}
+	.st7{
+		animation : blink8 5s infinite;
+	}
+
+	@keyframes blink1 {
+		0%{fill:#4e4e50;}
+		10%{fill:#D1A926;}
+		90%{fill:#D1A926;}
+		100%{fill:#4e4e50;}
+	}
+	@keyframes blink2 {
+		0%{fill:#4e4e50;}
+		10%{fill:#C30B13;}
+		90%{fill:#C30B13;}
+		100%{fill:#4e4e50;}
+	}
+	@keyframes blink3 {
+		0%{fill:#4e4e50;}
+		10%{fill:#D4A91F;}
+		90%{fill:#D4A91F;}
+		100%{fill:#4e4e50;}
+	}
+	@keyframes blink4 {
+		0%{fill:#4e4e50;}
+		10%{fill:#0E6298;}
+		90%{fill:#0E6298;}
+		100%{fill:#4e4e50;}
+	}
+		@keyframes blink5 {
+		0%{fill:#4e4e50;}
+		10%{fill:#698C31;}
+		90%{fill:#698C31;}
+		100%{fill:#4e4e50;}
+	}
+		@keyframes blink6 {
+		0%{fill:#4e4e50;}
+		10%{fill:#C60C13;}
+		90%{fill:#C60C13;}
+		100%{fill:#4e4e50;}
+	}
+		@keyframes blink7 {
+		0%{fill:#4e4e50;}
+		10%{fill:#006696;}
+		90%{fill:#006696;}
+		100%{fill:#4e4e50;}
+	}
+			@keyframes blink8 {
+		0%{fill:#4e4e50;}
+		10%{fill:#D4A722;}
+		90%{fill:#D4A722;}
+		100%{fill:#4e4e50;}
+	}
 </style>
 <switch>
 	<foreignObject requiredExtensions="&ns_ai;" x="0" y="0" width="1" height="1">
