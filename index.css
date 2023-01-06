@@ -129,6 +129,17 @@
      border: 1px solid rgba(255, 255, 255, 0.18); */
  }
 
+ .photo_wrap {
+     display: flex;
+     align-items: baseline;
+     font-size: 14px;
+ }
+
+ .photo {
+     margin: 0 50px;
+     color: #950740;
+ }
+
  .img_px>img {
      width: 100%;
  }
@@ -228,7 +239,7 @@
      }
  }
 
- @media screen and (max-width: 1250px) {
+ @media screen and (max-width: 1400px) {
      .country_txt_box {
          width: 40%;
      }
@@ -261,9 +272,13 @@
      }
  }
 
- @media screen and (max-width: 1100px) {
+ @media screen and (max-width: 1270px) {
      .all {
          position: relative;
+     }
+
+     .photo {
+         margin: 50px 0;
      }
 
      .menu {
@@ -486,5 +501,34 @@
 
      .img_px {
          margin-top: 50px;
+     }
+
+     .photo_wrap {
+         width: 100%;
+         color: #4e4e50;
+         display: flex;
+         justify-content: center;
+         gap: 20px;
+         background-color: #1A1A1D;
+         padding: 20px 0;
+         z-index: 99999;
+     }
+ }
+
+ @media screen and (max-height: 600px) {
+     .section {
+         min-height: 800px;
+     }
+
+     .menu>a>div {
+         font-size: 12px;
+     }
+
+     .menu {
+         gap: 10px;
+     }
+
+     .photo {
+         font-size: 12px;
      }
  }

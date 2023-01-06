@@ -227,6 +227,9 @@ $(document).ready(function () {
         $(".menu div").eq(i).css({
             color: "#950740"
         })
+        $(".photo").css({
+            color: "#950740"
+        })
     }
 
     $(window).scroll(function () {
@@ -443,7 +446,10 @@ $(document).ready(function () {
         menu_set_wid = "100%";
         menu_set_top = "100vh";
     }
-
+    let photo_menu_pos = "0 50px"
+    if (window.innerWidth < 1270) {
+        photo_menu_pos = "50px 0"
+    }
     $(window).scroll(function () {
         let s_top = $(window).scrollTop();
         let header = $(".menu").offset().top;
@@ -459,6 +465,10 @@ $(document).ready(function () {
                 height: menu_set_hei,
                 padding: menu_set_pad
             })
+            $(".photo").css({
+                margin: "50px 0",
+                color: "#950740"
+            })
         }
         else if (s_top < 207.8125) {
             $(".menu").css({
@@ -468,10 +478,20 @@ $(document).ready(function () {
                 padding: menu_reset_pad,
 
             })
+            $(".photo").css({
+                margin: photo_menu_pos,
+                color: "#950740"
+            })
+        }
+        else if (window.width > 1270 && s_top < 207.8125) {
+            $(".photo").css({
+                margin: "50px 0",
+                color: "#950740"
+            })
         }
     })
 
-    $(".menu a").click(function () {
+    $(".inner").click(function () {
         event.preventDefault();
         let href = $(this).attr('href');
         let pos = $(href).offset().top;
