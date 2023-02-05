@@ -16,6 +16,9 @@ $(document).ready(function () {
 
         }
     }
+    let make_link = $(".title").html;
+    console.log(make_link);
+    $(".inner")
     var swiper = new Swiper(".mySwiper", {
         grabCursor: true,
         effect: "creative",

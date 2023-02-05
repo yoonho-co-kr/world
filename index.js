@@ -57,7 +57,7 @@ $(document).ready(function () {
                                 <div class="name">${country_arr[i].toUpperCase()}
                 <div class="name_hide"></div>
                 </div>
-                <div class="img_px"><img src="./img/${country_arr[i]}.svg" alt=""></div>
+                <div class="img_px"><a href="photo.html"><img src="./img/${country_arr[i]}.svg" alt="${country_arr[i]}"></div></a>
             </div>
             <div class="country_txt_box">
                 <div class="info_box">
